@@ -1,0 +1,35 @@
+import ArrowRight from './Icons/arrow-right';
+import Bed from './Icons/bed';
+import CalenderDays from './Icons/calendarDays';
+import CasinoChip from './Icons/casino-chip';
+import DiningFork from './Icons/dining-fork';
+import Facebook from './Icons/facebook';
+import GiftFront from './Icons/gift-front';
+import Instagram from './Icons/instagram';
+import LocationPin from './Icons/location-pin';
+import Phone from './Icons/phone';
+import Ticket from './Icons/ticket';
+import Youtube from './Icons/youtube';
+import Tiktok from './Icons/tiktok';
+import ExternalLink from './Icons/external-link';
+import ChevronDown from './Icons/chevronDown';
+
+export const icons = {
+  locationPin: LocationPin,
+  arrowRight: ArrowRight,
+  giftFront: GiftFront,
+  casinoChip: CasinoChip,
+  bed: Bed,
+  ticket: Ticket,
+  diningFront: DiningFork,
+  calendarDays: CalenderDays,
+  facebook: Facebook,
+  instagram: Instagram,
+  youtube: Youtube,
+  tiktok: Tiktok,
+  phone: Phone,
+  externalLink: ExternalLink,
+  chevronDown: ChevronDown,
+};
+
+export type IconName = keyof typeof icons;

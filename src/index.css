@@ -1,0 +1,84 @@
+@import 'tailwindcss';
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-yellow: var(--yellow);
+  --color-gold: var(--gold);
+  --color-blue: var(--blue);
+  --color-text-black: var(--text-black);
+  --color-text-grey: var(--text-grey);
+  --color-border: var(--border);
+  --color-green: var(--green);
+
+  --font-sans: 'Lato', sans-serif;
+  --font-display: 'Cera Pro', sans-serif;
+
+  --text-2xs: 12px;
+  --text-xs: 14px;
+  --text-sm: 16px;
+  --text-md: 18px;
+  --text-lg: 20px;
+  --text-xl: 24px;
+  --text-2xl: 32px;
+  --text-3xl: 48px;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --leading-display: 1;
+  --leading-snug: 1.2;
+  --leading-normal: 1.25;
+  --leading-relaxed: 1.35;
+  --leading-loose: 1.7;
+
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
+  --radius-full: var(--radius-full);
+  --shadow-card: 0 4px 10px rgb(0 0 0 / 0.08);
+  --shadow-modal: 0 8px 24px rgb(0 0 0 / 0.12);
+}
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #242628;
+
+    --yellow: #f9b200;
+    --gold: #d6b151;
+    --blue: #007aff;
+
+    --text-black: #242628;
+    --text-grey: #646366;
+
+    --border: #00000014;
+
+    --green: #008827;
+
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    --radius-full: 9999px;
+  }
+
+  * {
+    border-color: var(--border);
+    @apply border-border;
+  }
+
+  html {
+    @apply font-sans;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
