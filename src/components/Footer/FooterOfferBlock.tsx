@@ -13,7 +13,11 @@ const FooterOfferBlock = () => {
         Receive Special Member Offers
       </SText>
 
-      <SButton variant="gold" size="lg" classStyles="text-sm leading-loose mt-6 w-fit">
+      <SButton
+        variant="gold"
+        size="lg"
+        classStyles="cursor-pointer text-sm leading-loose mt-6 w-fit"
+      >
         <SIcon name="unity" size={16} />
         Sign In or Join Now
       </SButton>

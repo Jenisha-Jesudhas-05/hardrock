@@ -4,7 +4,7 @@ import { twMerge } from 'tailwind-merge';
 import SText from '@components/SText/SText';
 import Logo from '@components/SLogo/Logo/HeaderLogo';
 import SIcon from '@components/SIcons/SIcon';
-import { MOBILE_NAV_LINKS } from './nav-links';
+import { MOBILE_NAV_LINKS } from './NavLinks';
 import type { MobileHeaderProps } from './header.types';
 
 export const MobileHeader = ({ className }: MobileHeaderProps) => {

@@ -2,8 +2,8 @@ import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { describe, it, expect } from 'vitest';
 
-import { DesktopHeader } from './desktop-header';
-import { DESKTOP_NAV_LINKS } from './nav-links';
+import { DesktopHeader } from './DesktopHeader';
+import { DESKTOP_NAV_LINKS } from './NavLinks';
 
 const renderWithRouter = (ui: React.ReactElement) => render(<MemoryRouter>{ui}</MemoryRouter>);
 

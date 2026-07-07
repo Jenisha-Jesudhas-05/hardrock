@@ -93,7 +93,7 @@ export const MobileFooter = ({ className }: MobileFooterProps) => {
               key={label}
               variant="ghost"
               size="sm"
-              classStyles="h-auto px-0 text-xs font-normal whitespace-nowrap text-[#FFFFFFBF]"
+              classStyles="cursor-pointer h-auto px-0 text-xs font-normal whitespace-nowrap text-[#FFFFFFBF]"
             >
               {label}
             </SButton>

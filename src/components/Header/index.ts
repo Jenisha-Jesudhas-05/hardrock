@@ -1,5 +1,5 @@
-export { MobileHeader } from './mobile-header';
-export { DesktopHeader } from './desktop-header';
+export { MobileHeader } from './MobileHeader';
+export { DesktopHeader } from './DesktopHeader';
 export type {
   MobileHeaderProps,
   DesktopHeaderProps,

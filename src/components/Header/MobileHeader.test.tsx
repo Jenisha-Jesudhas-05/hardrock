@@ -2,8 +2,8 @@ import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { describe, it, expect } from 'vitest';
 
-import { MobileHeader } from './mobile-header';
-import { MOBILE_NAV_LINKS } from './nav-links';
+import { MobileHeader } from './MobileHeader';
+import { MOBILE_NAV_LINKS } from './NavLinks';
 
 const renderWithRouter = (ui: React.ReactElement) => render(<MemoryRouter>{ui}</MemoryRouter>);
 

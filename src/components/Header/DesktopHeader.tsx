@@ -5,7 +5,7 @@ import SText from '@components/SText/SText';
 import Logo from '@components/SLogo/Logo/HeaderLogo';
 import SIcon from '@components/SIcons/SIcon';
 
-import { DESKTOP_NAV_LINKS } from './nav-links';
+import { DESKTOP_NAV_LINKS } from './NavLinks';
 import type { DesktopHeaderProps } from './header.types';
 
 export const DesktopHeader = ({ className }: DesktopHeaderProps) => {
