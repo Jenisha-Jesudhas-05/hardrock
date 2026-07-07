@@ -13,6 +13,7 @@ import Youtube from './Icons/youtube';
 import Tiktok from './Icons/tiktok';
 import ExternalLink from './Icons/external-link';
 import ChevronDown from './Icons/chevronDown';
+import Unity from './Icons/unity';
 
 export const icons = {
   locationPin: LocationPin,
@@ -30,6 +31,7 @@ export const icons = {
   phone: Phone,
   externalLink: ExternalLink,
   chevronDown: ChevronDown,
+  unity: Unity,
 };
 
 export type IconName = keyof typeof icons;

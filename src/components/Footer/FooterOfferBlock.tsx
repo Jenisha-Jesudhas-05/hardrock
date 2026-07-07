@@ -2,9 +2,9 @@
 import SButton from '@components/SButton/SButton';
 import SText from '@components/SText/SText';
 import { FooterBet, FooterGames } from '@components/SLogo';
-import Unity from '@components/SIcons/Icons/unity';
-import appStore from '../../../public/appStore.svg';
-import googlePlay from '../../../public/googlePlay.svg';
+import appStore from '@assets/appStore.svg';
+import googlePlay from '@assets/googlePlay.svg';
+import SIcon from '@components/SIcons/SIcon';
 
 const FooterOfferBlock = () => {
   return (
@@ -14,7 +14,7 @@ const FooterOfferBlock = () => {
       </SText>
 
       <SButton variant="gold" size="lg" classStyles="text-sm leading-loose mt-6 w-fit">
-        <Unity className="mr-2" />
+        <SIcon name="unity" size={16} />
         Sign In or Join Now
       </SButton>
 
