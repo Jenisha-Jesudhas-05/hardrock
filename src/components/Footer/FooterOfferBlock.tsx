@@ -30,9 +30,14 @@ const FooterOfferBlock = () => {
         Online Sportsbook & Gaming
       </SText>
 
-      <div className="mt-7 flex items-center gap-4">
-        <FooterGames className="mb-4" />
-        <FooterBet />
+      <div className="mt-7 flex items-end gap-4">
+        <div className="flex h-12 items-end">
+          <FooterGames />
+        </div>
+
+        <div className="flex h-12 items-end">
+          <FooterBet />
+        </div>
       </div>
     </div>
   );
