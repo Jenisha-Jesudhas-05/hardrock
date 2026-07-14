@@ -14,6 +14,10 @@ import Tiktok from './Icons/tiktok';
 import ExternalLink from './Icons/external-link';
 import ChevronDown from './Icons/chevronDown';
 import Unity from './Icons/unity';
+import Resort from './Icons/resort';
+import Balcony from './Icons/balcony';
+import Ruler from './Icons/ruler';
+import Users from './Icons/users';
 
 export const icons = {
   locationPin: LocationPin,
@@ -32,6 +36,10 @@ export const icons = {
   externalLink: ExternalLink,
   chevronDown: ChevronDown,
   unity: Unity,
+  resort: Resort,
+  balcony: Balcony,
+  ruler: Ruler,
+  users: Users,
 };
 
 export type IconName = keyof typeof icons;
