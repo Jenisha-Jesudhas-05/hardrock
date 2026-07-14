@@ -8,7 +8,7 @@ const CarouselCard = React.forwardRef<HTMLDivElement, CarouselCardProps>(
       <div
         ref={ref}
         className={twMerge(
-          'relative h-full w-full rounded-lg overflow-hidden shadow-card',
+          'relative aspect-[4/3] w-full overflow-hidden rounded-lg shadow-card',
           classStyles,
         )}
       >

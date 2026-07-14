@@ -26,8 +26,8 @@ function Carousel<T>({
             className="flex items-center gap-2 cursor-pointer font-display text-lg font-bold text-text-black"
           >
             {title}
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-border">
-              <ArrowRight className="h-6 w-6" />
+            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-border">
+              <ArrowRight className="h-5 w-5" />
             </span>
           </button>
           {subtitle && (

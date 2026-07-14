@@ -4,7 +4,7 @@ import { twMerge } from 'tailwind-merge';
 import type { SRoomCardProps } from './SRoomCard.types';
 import SIcon from '@components/SIcons/SIcon';
 
-const buttonStyles = 'h-12 sm:h-20 md:h-12 flex-1 rounded-full text-sm md:text-base font-semibold';
+const buttonStyles = 'h-12 sm:h-11 md:h-12 flex-1 rounded-full text-sm md:text-base font-semibold';
 
 const SRoomCard = ({
   image,
@@ -25,11 +25,11 @@ const SRoomCard = ({
   return (
     <div
       className={twMerge(
-        'flex w-full h-full flex-col overflow-hidden rounded-lg border border-gray-200 bg-white',
+        'flex h-[600px] w-full flex-col overflow-hidden rounded-lg border border-gray-200 bg-white sm:h-full',
         classStyles,
       )}
     >
-      <div className="relative aspect-[16/9] w-full sm:aspect-[16/10] md:h-64 md:aspect-auto">
+      <div className="relative w-full flex-1 sm:aspect-[16/10] sm:flex-none md:h-64 md:aspect-auto">
         <img src={image} alt={imageAlt} className="h-full w-full object-cover" />
         <span className="absolute bottom-2 left-2 flex items-center gap-1.5 sm:bottom-3 sm:left-3 md:bottom-4 md:left-4">
           <span className="flex items-center gap-1 rounded bg-white px-2 py-1 sm:gap-1.5 sm:px-2.5 sm:py-1.5">
@@ -49,7 +49,7 @@ const SRoomCard = ({
         </span>
       </div>
 
-      <div className="flex flex-1 flex-col gap-2 p-3 sm:gap-3 sm:p-4">
+      <div className="flex flex-1 flex-col justify-center gap-2 p-3 sm:flex-none sm:gap-3 sm:p-4">
         <SText variant="bodyMd" classStyles="font-bold leading-normal">
           {title}
         </SText>
@@ -91,7 +91,7 @@ const SRoomCard = ({
           )}
         </div>
 
-        <div className="mt-auto flex flex-col gap-3 pt-2 sm:flex-row sm:gap-3">
+        <div className="mt-2 flex flex-col gap-3 pt-2 sm:mt-auto sm:flex-row sm:gap-3">
           <SButton variant="outline" onClick={onViewRoom} classStyles={buttonStyles}>
             View Room
           </SButton>
