@@ -20,7 +20,7 @@ export const MobileFooter = ({ className }: MobileFooterProps) => {
   return (
     <footer className={twMerge('w-full bg-black text-white', className)}>
       {/* Top section — offer block + accordions */}
-      <div className="px-4 py-6">
+      <div className="w-full max-w-7xl xl:max-w-360 mx-auto px-4 xl:px-4 py-6">
         <FooterOfferBlock />
 
         <div className="mt-6 border-t border-white/15" />
@@ -30,7 +30,7 @@ export const MobileFooter = ({ className }: MobileFooterProps) => {
         <FooterAccordionColumn title="Company Information" links={COMPANY_LINKS} />
       </div>
 
-      <div className="px-4 py-6">
+      <div className="w-full max-w-7xl xl:max-w-360 mx-auto px-4 xl:px-4 py-6">
         <div className="flex items-center gap-2">
           <Logo />
           <SText variant="bodySm" classStyles="text-white uppercase tracking-wide">

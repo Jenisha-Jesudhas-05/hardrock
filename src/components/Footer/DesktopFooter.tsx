@@ -19,7 +19,7 @@ import type { DesktopFooterProps } from './Footer.types';
 export const DesktopFooter = ({ className }: DesktopFooterProps) => {
   return (
     <footer className={twMerge('w-full bg-black text-white', className)}>
-      <div className="mx-auto max-w-7xl px-8 pt-14 pb-6">
+      <div className="w-full max-w-7xl xl:max-w-360 mx-auto px-8 xl:px-8 pt-14 pb-6">
         <div className="grid grid-cols-4 gap-20">
           <div>
             <FooterOfferBlock />
@@ -31,7 +31,7 @@ export const DesktopFooter = ({ className }: DesktopFooterProps) => {
         </div>
       </div>
 
-      <div className="mx-auto max-w-7xl px-8 py-8">
+      <div className="w-full max-w-7xl xl:max-w-360 mx-auto px-8 xl:px-8 py-8">
         <div className="border-t border-white/15" />
 
         <div className="mt-7 flex items-center">
