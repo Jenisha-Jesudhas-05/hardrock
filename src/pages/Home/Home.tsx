@@ -81,7 +81,6 @@ const Home = () => {
           title="Find Your Next Stay"
           subtitle="Two towers, one destination."
           items={stays}
-          aspectRatio="416/364"
           renderCard={(stay) => (
             <CarouselCard
               image={stay.image}
@@ -95,7 +94,6 @@ const Home = () => {
         <Carousel<Offer>
           title="Offers You Can't Miss"
           items={offers}
-          aspectRatio="416/240"
           renderCard={(offer) => (
             <CarouselCard
               image={offer.image}
@@ -109,7 +107,6 @@ const Home = () => {
         <Carousel<Promotion>
           title="Casino Promotions"
           items={promotions}
-          aspectRatio="416/240"
           renderCard={(promotions) => (
             <CarouselCard
               image={promotions.image}
