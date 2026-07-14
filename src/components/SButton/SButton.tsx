@@ -4,7 +4,7 @@ import { twMerge } from 'tailwind-merge';
 import type { SButtonProps } from './SButton.types';
 
 const buttonVariants = cva(
-  'inline-flex items-center justify-center gap-2 font-sans font-bold leading-relaxed whitespace-nowrap transition-colors disabled:pointer-events-none disabled:opacity-50',
+  'inline-flex items-center justify-center gap-2 font-sans font-bold leading-relaxed whitespace-nowrap transition-colors cursor-pointer disabled:pointer-events-none disabled:opacity-50',
   {
     variants: {
       variant: {
