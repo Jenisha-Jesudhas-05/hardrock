@@ -7,7 +7,6 @@ export type CarouselProps<T> = {
   renderCard: (item: T) => ReactNode;
   onSeeAll?: () => void;
   classStyles?: string;
-  aspectRatio?: string; // e.g. '416/364'
 };
 
 export type CarouselCardProps = {

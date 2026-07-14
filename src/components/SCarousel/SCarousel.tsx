@@ -13,12 +13,8 @@ function Carousel<T>({
   renderCard,
   onSeeAll,
   classStyles = '',
-  aspectRatio = '416/364',
 }: CarouselProps<T>) {
   const { trackRef, canScrollPrev, canScrollNext, scrollByCard } = useCarouselScroll();
-
-  const [w, h] = aspectRatio.split('/').map(Number);
-  const paddingTopPercent = (h / w) * 100;
 
   return (
     <section className={twMerge('w-full', classStyles)}>
@@ -65,15 +61,14 @@ function Carousel<T>({
 
       <div
         ref={trackRef}
-        className="scrollbar-hide flex gap-4 overflow-x-auto scroll-smooth pb-2 [scroll-snap-type:x_mandatory]"
+        className="scrollbar-hide flex items-stretch gap-4 overflow-x-auto scroll-smooth pb-2 [scroll-snap-type:x_mandatory]"
       >
         {items.map((item, i) => (
           <div
             key={i}
-            className="relative w-[85%] flex-none scroll-snap-align:start sm:w-[46%] lg:w-[calc((100%-2rem)/3)]"
+            className="w-[85%] flex-none scroll-snap-align:start sm:w-[46%] lg:w-[calc((100%-2rem)/3)]"
           >
-            <div style={{ paddingTop: `${paddingTopPercent}%` }} />
-            <div className="absolute inset-0">{renderCard(item)}</div>
+            {renderCard(item)}
           </div>
         ))}
       </div>

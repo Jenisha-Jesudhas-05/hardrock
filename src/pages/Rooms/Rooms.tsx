@@ -124,7 +124,6 @@ const Room = () => {
             title="Top Picks For Your Stay"
             subtitle="Start with our most popular room choices."
             items={topPicks}
-            aspectRatio="416/454"
             renderCard={(room) => <SRoomCard {...room} classStyles="h-full" />}
           />
         </div>
